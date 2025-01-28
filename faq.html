@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Bay Travels</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <header>
+        <div class="company-name"> 
+            <a href="index.html">
+                <span>BayTravel.com</span> 
+            </a>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="faq-content">
+        <h1>Frequently Asked Questions</h1>
+
+        <section class="faq-section" id="booking">
+            <h2>Booking</h2>
+            <div class="faq-item">
+                <button class="faq-question">How do I make a booking?</button>
+                <div class="faq-answer">
+                    <p>To make a booking on BayTravel.com, follow these simple steps:</p>
+                    <ol>
+                        <li>Use the search bar to find your desired destination and travel dates.</li>
+                        <li>Browse the available options and select your preferred accommodation or travel package.</li>
+                        <li>Click on the "Book Now" button and enter your personal and payment details.</li>
+                        <li>Review your booking information and confirm your reservation.</li>
+                        <li>You will receive a confirmation email with your booking details.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Can I modify or cancel my booking?</button>
+                <div class="faq-answer">
+                    <p>Yes, you can usually modify or cancel your booking, subject to the terms and conditions of the specific
+                        travel package or accommodation you have booked. To modify or cancel your booking, please refer to your
+                        booking confirmation email or contact our customer support team for assistance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="payments">
+            <h2>Payments</h2>
+            <div class="faq-item">
+                <button class="faq-question">What payment methods do you accept?</button>
+                <div class="faq-answer">
+                    <p>We accept a variety of payment methods, including:</p>
+                    <ul>
+                        <li>Major credit cards (Visa, Mastercard, American Express)</li>
+                        <li>PayPal</li>
+                        <li>Bank transfer (for certain bookings)</li>
+                    </ul>
+                    <p>The available payment methods may vary depending on the specific booking.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Is my payment secure?</button>
+                <div class="faq-answer">
+                    <p>Yes, your payment is secure on BayTravel.com. We use industry-standard security measures, including SSL
+                        encryption, to protect your personal and financial information during the payment process.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="about-us">
+            <h2>About Us</h2>
+            <div class="faq-item">
+                <button class="faq-question">What is Bay Travels?</button>
+                <div class="faq-answer">
+                    <p>Bay Travels is a leading online travel agency dedicated to helping you plan and book the perfect trip. We
+                        offer a wide range of travel options, including flights, hotels, vacation packages, cruises, and more, to
+                        destinations all around the world.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What makes Bay Travels different?</button>
+                <div class="faq-answer">
+                    <p>At Bay Travels, we are committed to providing our customers with the best possible travel experience. We
+                        offer:</p>
+                    <ul>
+                        <li>Competitive prices</li>
+                        <li>A wide selection of travel options</li>
+                        <li>Easy-to-use online booking platform</li>
+                        <li>Excellent customer support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="support">
+            <h2>Support</h2>
+            <div class="faq-item">
+                <button class="faq-question">How can I contact customer support?</button>
+                <div class="faq-answer">
+                    <p>You can contact our customer support team by phone, email, or live chat. Our contact information is
+                        available on the "Contact Us" page of our website.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What are your customer support hours?</button>
+                <div class="faq-answer">
+                    <p>Our customer support team is available 24/7 to assist you with your travel needs.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+          <p>Privacy Policy | Terms of Service | FAQ</p>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="backToTop" title="Go to top">Back to Top</button> 
+
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                question.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

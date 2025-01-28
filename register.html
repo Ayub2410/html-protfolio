@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register - Bay Travels</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <div class="company-name">
+            <a href="index.html">
+                <span>BayTravel.com</span>
+            </a>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog-post1.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Login or Register</h1>
+    </div>
+
+    <main>
+        <div class="form-container">
+            <form class="login-form" action="#" method="post">
+                <h2>Login</h2>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+
+                <button type="submit" onclick="window.location.href='form.html'">Login</button>
+            </form>
+
+            <form class="registration-form" action="#" method="post">
+                <h2>Register</h2>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label> 
+                <input type="tel" id="phone" name="phone" required> 
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" onclick="window.location.href='otp.html'">Register</button> 
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+          <p>Privacy Policy | Terms of Service | FAQ</p>
+        </div>
+    </footer>
+</body>
+</html>
